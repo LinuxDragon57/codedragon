@@ -1,0 +1,273 @@
+@use 'normalize';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-bg-color: #EBEBEB;
+  --text-color: #110F1A;
+  --accent-color: #79C99E;
+  --heading-color: #4EA5D9;
+}
+
+body {
+  background: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: "Oxanium", sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 20% 0;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  &::before {
+    content: "";
+    display: block;
+    background: linear-gradient(90deg, var(--heading-color), var(--accent-color));
+    position: absolute;
+    top: -150%;
+    left: 0;
+    width: 100%;
+    height: 350%;
+    z-index: -30;
+    transform: skewY(15deg);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: inline-flex;
+}
+
+img#logo {
+  justify-self: flex-end;
+  height: 256px;
+  margin: 0 0 10px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Oxanium SemiBold", sans-serif;
+  margin: 0.2em 0;
+  color: #00476c;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: "Oxanium Bold", sans-serif;
+  padding: 0;
+  margin-top: 0;
+  color: seagreen;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: "Oxanium ExtraBold", sans-serif;
+  color: darkslateblue;
+}
+
+h4 {
+  font-size: 1.44rem;
+  font-family: "Oxanium Medium", sans-serif;
+}
+
+h5 {
+  font-size: 1.15rem;
+  font-family: "Oxanium Regular", sans-serif;
+}
+
+h6 {
+  font-size: 0.92rem;
+  font-family: "Oxanium Light", sans-serif;
+}
+
+p, ul, ol {
+  font-size: 1.25rem;
+  font-family: "Oxanium Medium", sans-serif;
+  text-align: justify;
+  margin: 1em 4em;
+  line-height: 1.5;
+  width: 50rem;
+}
+
+@counter-style home {
+  system: cyclic;
+  symbols: "~";
+  suffix: " ";
+}
+
+ul {
+  list-style: home;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+main {
+  margin: 0 5rem 7rem;
+  min-width: 80%;
+  padding: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 3%;
+}
+
+div#contentTitle {
+  width: auto;
+  height: max-content;
+  margin: 3em;
+}
+
+div#contentBody {
+  width: auto;
+  height: max-content;
+  margin: 3em 0;
+}
+
+ul#contactList {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+div#badges {
+  padding-top: 5rem;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+img.badge {
+  width: 128px;
+  height: 128px;
+}
+
+footer {
+  display: flex;
+  height: 128px;
+  width: 100%;
+  background-color: lightgrey;
+  flex-flow: row wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 3em 1em;
+  position: relative;
+  bottom: 0;
+  border-top: solid 1px var(--text-color);
+}
+
+/* Responsive Design Rules */
+@media screen and (max-width: 600px) and (orientation: portrait),
+screen and (max-width: 800px) and (orientation: landscape)
+{
+  body {
+    background-image: linear-gradient(to top right, var(--bg-accent-color), var(--primary-bg-color));
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.65rem;
+    line-height: 1.25;
+    padding: 0.25rem;
+  }
+
+  p, ul, ol {
+    text-align: left;
+    font-size: 1rem;
+    margin: 0.5em 2em;
+    line-height: 1.25;
+    width: 90%;
+  }
+
+  ul {
+    row-gap: 0.75em;
+  }
+
+  div#heading {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.25em;
+  }
+
+  img#logo {
+    margin: 0;
+    align-self: center;
+    padding-top: 0.25em;
+  }
+
+  h2#running-head {
+    font-size: 1.75rem;
+    padding: 0 0.25em;
+    margin: 0.25rem;
+    align-self: flex-end;
+  }
+
+  main {
+    margin: 5em 1em;
+    padding: 0.25em;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  div#contentTitle {
+    margin: 1.5em 0;
+  }
+
+  div#contentBody {
+    margin: 0.5em 0;
+  }
+
+  footer {
+    height: 55px;
+    padding: 0.25em;
+    gap: 0;
+  }
+}
