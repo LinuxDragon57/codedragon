@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Oxanium
+- Font Author: Copyright 2019 The Oxanium Project Authors (https://github.com/sevmeyer/oxanium)
+- Font Source: http://fonts.gstatic.com/s/oxanium/v19/RrQPboN_4yJ0JmiMUW7sIGjd1IA9G82XeXiMBXQ7d67x.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
