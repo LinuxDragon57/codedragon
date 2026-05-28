@@ -1,0 +1,11 @@
+{
+  "name": "codedragon-portfolio",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "sass": "^1.100.0",
+    "typescript": "^6.0.3"
+  },
+  "private": true,
+  "type": "module"
+}

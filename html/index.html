@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+                name="description"
+                content="Hello, I am Tyler Gautney. I am a computer software engineer with a
+              fascination in astronomy, robots (and robot AI), and cryptography."
+        >
+        <title>Tyler Gautney | Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.codedragon.dev/oxanium/oxanium.css">
+        <link rel="stylesheet" type="text/css" href="static/styles/styles.css">
+    </head>
+    <body>
+        <header id="heading">
+            <h1>Tyler Gautney</h1>
+            <img id="logo" src="images/codedragon-logo.svg" alt="dragon logo">
+        </header>
+        <main>
+            <div id="contentTitle">
+                <h1>Welcome to my Domain</h1>
+                <h2>Software Engineer | Linux Sysadmin | Cyber-Security Wizard</h2>
+            </div>
+            <div id="contentBody">
+                <h3>Projects: </h3>
+                <div id="cards">
+                    <a class="card" href="https://swforge.codedragon.dev/explore/repos" target="_self">
+                        <span class="cardEyebrow">Self-Hosted</span>
+                        <h4 class="cardTitle">Forgejo Instance</h4>
+                        <span class="cardDesc">A self-hosted Git forge running on my own infrastructure for personal and project repositories.</span>
+                        <span class="cardArrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a class="card" href="https://ugcapstone.codedragon.dev" target="_self">
+                        <span class="cardEyebrow">Academic &middot; Capstone</span>
+                        <h4 class="cardTitle">UG Capstone Project</h4>
+                        <span class="cardDesc">My undergraduate capstone project showcasing the culmination of my computer science studies.</span>
+                        <span class="cardArrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a class="card" href="https://linuxdragon.dev" target="_self">
+                        <span class="cardEyebrow">Live Portfolio</span>
+                        <h4 class="cardTitle">Linux Sysadmin Portfolio</h4>
+                        <span class="cardDesc">A companion portfolio highlighting my Home Lab work, services, and infrastructure.</span>
+                        <span class="cardArrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+                <h3>About Me:</h3>
+            <ul>
+                <li>
+                    I've always had an affinity for technology, but I was first introduced to computer programming
+                    in eighth grade when professors from the University of North Alabama presented to my advanced math
+                    class. At first, since I've never felt that I was particularly strong in math, I thought that I'd
+                    never be smart enough for the mathematical gymnastics required for programming. However, I was
+                    nominated for UNA's STEM camp in 2016 by my high school's math department, where I discovered 
+                    that I actually quite enjoyed creating algorithms. Afterwards, my hunger for
+                    more knowledge led me down a long and winding journey of discovery and adventure within tech.
+                </li>
+                <li>
+                    My adventure began with a Raspberry Pi, and with it came my first discovery: Linux. Ever since,
+                    I've been an active Linux user and FOSS community activist. My knowledge of the world's most popular
+                    OS has only grown exponentially, and now I run it on everything from my multiple hobbyist SBCs to
+                    my self-built gaming computer to my Linode VPS.
+                </li>
+                <li>
+                    Robots are really rad. But do you know what's even better? Space Robots... Astronomy has captivated
+                    my attention since I was a 4-year-old. All my life I've dreamed of being an astronaut or an
+                    astronomer; but when I discovered how awesome robots were, I became dubious between pursuing a
+                    career in astronomy versus Computer Science. Yet, when the Perseverance Rover landed on Mars,
+                    a revelation occurred to me: why not help engineer space robots and their space robot AI?
+                </li>
+                <li>
+                    Another computer science topic that captivates me is cryptography. I've been working hard to
+                    learn about implementing these systems in an effort to learn more about them. While technically
+                    overkill for this domain, I've implemented SSL encryption with at least a TLS 1.2 Handshake, HSTS,
+                    Secure Renegotiation, SSL Stapling, DNS CAA, and even DNSSEC. Furthermore, my website also receives
+                    an A+ rating for its <a href="https://securityheaders.com/?q=codedragon.dev&followRedirects=on"
+                                            target="_blank">Security Headers</a> and an A+ rating for its SSL security on
+                    <a href="https://www.ssllabs.com/ssltest/analyze.html?d=codedragon.dev" target="_blank">
+                    SSL Labs</a>. Honestly, I don't fully understand all of these security measures even if I do know
+                    how to implement them; but I'd really like to better understand how cryptography works and its
+                    algorithmic implementations.
+                </li>
+                <li>
+                    My first hobby was reading. In my early days, I'd read any children's books about space, but
+                    my third grade teacher eventually pushed me to read something different. That was when I fell in love with
+                    fiction books. I still remember the first series I ever read: <em>Deltora Quest</em> by Emily Rhodda.
+                    Many of my favorite fictional stories are filled with all sorts of fantastical creatures of myth, and
+                    dragons are among my favorite &mdash; though the dragons of books are more interesting and diverse than
+                    the dragons of the movies.
+                </li>
+                <li>
+                    Over the years, the countless voices of all the authors whose works I've read have nurtured another
+                    hobby of mine: writing. Combined with the guidance of my English teachers, I've been able to also
+                    grow and become a better writer. I wrote some content management software to help me 
+                    <a href="https://anthologies.eljackson.net" target="_blank">publish my compendium of anthologies.</a>
+                </li>
+            </ul>
+
+            <h3>Contact Me:</h3>
+            <div class="contactTiles">
+                <a class="contactTile" href="/tylerg-pub.key" aria-label="Download my PGP public key">
+                    <svg class="contactIcon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M21 10h-8.35A5.99 5.99 0 0 0 7 6a6 6 0 1 0 5.65 8H13l2 2 2-2 2 2 4-4-2-2zM7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                    </svg>
+                    <span class="contactLabel">PGP Public Key</span>
+                    <code class="pgpFingerprint" id="pgpFingerprint" data-status="loading" aria-live="polite">loading fingerprint&hellip;</code>
+                </a>
+                <a class="contactTile" href="/resume.pdf" aria-label="View my résumé">
+                    <svg class="contactIcon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v2H8v-2zm0 4h8v2H8v-2zm0-8h4v2H8V9z"/>
+                    </svg>
+                    <span class="contactLabel">Résumé</span>
+                    <span class="contactSub">PDF</span>
+                </a>
+                <a class="contactTile" href="www.linkedin.com/in/tyler-gautney" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                    <svg class="contactIcon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+                    </svg>
+                    <span class="contactLabel">LinkedIn</span>
+                    <span class="contactSub">Professional</span>
+                </a>
+                <a class="contactTile" href="/contact" aria-label="Contact form">
+                    <svg class="contactIcon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span class="contactLabel">Email</span>
+                    <span class="contactSub">Contact Form</span>
+                </a>
+            </div>
+            <section id="badges" aria-labelledby="affiliationsHeading">
+                <h3 id="affiliationsHeading">I Stand With</h3>
+                <div class="badgeRow">
+                    <a href="https://www.eff.org/about" target="_blank">
+                        <img class="badge" src="images/EFF_Membership_badge.png" alt="EFF Membership Badge">
+                    </a>
+                    <a href="https://www.python.org/about/" target="_blank">
+                        <img class="badge" src="images/PSF_Supporting_Member_badge.png" alt="Python Software Foundation Membership Badge">
+                    </a>
+                </div>
+            </section>
+        </div>
+        </main>
+        <footer>
+            <div class="footerContent">
+                <h4>Logo design <a href="https://www.instagram.com/zevnarunh" target="_blank">by Allison Lott.</a></h4>
+            </div>
+            <div class="footerBottom">
+                <h5>Copyright &copy; 2019<span id="year"></span> Tyler Gautney</h5>
+                <noscript>This website uses some JavaScript. Some functionality may not be available.</noscript>
+            </div>
+        </footer>
+        <script type="text/javascript" src="static/scripts/ui.js"></script>
+    </body>
+</html>

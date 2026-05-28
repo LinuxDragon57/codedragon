@@ -1,0 +1,1402 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/******************************************
+/* RESET FORM ELEMENTS / DEFAULTS
+******************************************/
+fieldset, form, label, legend, input, select, textarea, option {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+:root {
+    --nf-main-color: #4A90E2;
+    --nf-main-color-faded: #EDF4FC;
+    --nf-main-color-hover-color: #3B7CC8;
+
+    --nf-success-border-color: #17C37B;
+
+    --nf-error-border-color: #EFADB5;
+    --nf-error-bg-color: #FEF7F8;
+}
+*/
+:root {
+  --nf-main-color: #4EA5D9;
+  --nf-main-color-faded: #D2D2D2;
+  --nf-main-color-hover-color: #278CC2;
+  --nf-success-border-color: #79C99E;
+  --nf-error-border-color: #E85F5C;
+  --nf-error-bg-color: #FEF7F8;
+}
+
+/******************************************
+/* NORMFORM CSS
+******************************************/
+/* Shared styles */
+form.normform label,
+form.normform input,
+form.normform textarea,
+form.normform select {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+form.normform input,
+form.normform textarea,
+form.normform .select-dropdown,
+form.normform .select-listed,
+form.normform input[type=checkbox] + label,
+form.normform input[type=radio] + label {
+  margin-bottom: 20px;
+}
+
+/* Fieldset */
+form.normform fieldset {
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  padding: 20px 20px 0;
+}
+
+/* Legend */
+form.normform legend {
+  color: grey;
+  font-size: 80%;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+/* Labels */
+form.normform label {
+  font-size: 90%;
+  margin-bottom: 5px;
+}
+
+/* Successful inputs */
+form.normform input[type=text]:valid:not(:placeholder-shown),
+form.normform input[type=email]:valid:not(:placeholder-shown),
+form.normform input[type=password]:valid:not(:placeholder-shown),
+form.normform input[type=number]:valid:not(:placeholder-shown),
+form.normform textarea:valid:not(:placeholder-shown) {
+  border-color: var(--nf-success-border-color);
+  border-left: 5px solid var(--nf-success-border-color);
+  -ms-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* Inputs / Textareas */
+form.normform input,
+form.normform textarea,
+form.normform select,
+form.normform input[type=checkbox] + label,
+form.normform input[type=radio] + label {
+  border: 1px solid lightgrey;
+  border-left: 5px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 15px;
+}
+
+form.normform input:required,
+form.normform textarea:required,
+form.normform select:required {
+  border-left: 5px solid #EFADB5;
+}
+
+form.normform input:focus,
+form.normform input[type=checkbox]:focus + label,
+form.normform input[type=radio]:focus + label,
+form.normform textarea:focus,
+form.normform select:focus {
+  border-color: var(--nf-main-color);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Invalid errors */
+form.normform input:invalid:not(:focus):not(:placeholder-shown),
+form.normform input:invalid:focus:not(:placeholder-shown) {
+  background: var(--nf-error-bg-color);
+  border-color: var(--nf-error-border-color);
+}
+
+form.normform input:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: 150px;
+  padding: 0 0 10px 10px;
+}
+
+form.normform .requirements {
+  color: red;
+  font-size: 80%;
+  font-style: italic;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  position: relative;
+  -ms-transition: 0.28s;
+  -webkit-transition: 0.28s;
+  top: -10px;
+  transition: 0.28s;
+}
+
+/* Select Default Styles */
+form.normform select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: white;
+  margin: 0;
+  padding-right: 40px;
+}
+
+/* Select Dropdown */
+form.normform .select-dropdown {
+  background: white;
+  display: block;
+  position: relative;
+}
+
+form.normform .select-dropdown:after {
+  background: none;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  content: "";
+  display: block;
+  height: 6px;
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 6px);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: 6px;
+}
+
+/* Radio Buttons & Checkboxes */
+form.normform input[type=checkbox], form.normform input[type=radio],
+form.normform input[type=checkbox] + label, form.normform input[type=radio] + label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+form.normform input[type=checkbox] + label, form.normform input[type=radio] + label {
+  border: 1px solid lightgrey;
+  font-size: 100%;
+  padding-left: 30px;
+  position: relative;
+}
+
+form.normform input[type=checkbox] + label:before,
+form.normform input[type=radio] + label:before {
+  background: white;
+  border-radius: 2px;
+  border: 1px solid black;
+  content: "";
+  height: 9px;
+  left: 10px;
+  position: absolute;
+  top: calc(50% - 5px);
+  width: 9px;
+}
+
+form.normform input[type=radio] + label:before {
+  border-radius: 100px;
+}
+
+form.normform input[type=radio]:checked + label:before {
+  background: var(--nf-main-color);
+  border-color: var(--nf-main-color);
+}
+
+form.normform input[type=checkbox] + label:after {
+  color: white;
+  content: "✓";
+  display: none;
+  font-size: 14px;
+  font-weight: bold;
+  left: 11px;
+  position: absolute;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  top: calc(50% - 10px);
+}
+
+form.normform input[type=radio] + label:after {
+  background: white;
+  border-radius: 100px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  content: "";
+  display: none;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 13px;
+  top: calc(50% - 2px);
+}
+
+form.normform input[type=radio]:checked + label:after {
+  display: block;
+}
+
+form.normform input[type=checkbox]:focus + label,
+form.normform input[type=radio]:focus + label {
+  border-color: var(--nf-main-color);
+}
+
+form.normform input[type=checkbox]:checked + label,
+form.normform input[type=radio]:checked + label {
+  background: var(--nf-main-color-faded);
+  border-color: var(--nf-main-color);
+}
+
+form.normform input[type=checkbox]:checked + label:before {
+  background: var(--nf-main-color);
+  border-color: var(--nf-main-color);
+}
+
+form.normform input[type=checkbox]:checked + label:after {
+  display: block;
+}
+
+form.normform input[type=checkbox],
+form.normform input[type=radio] {
+  margin-right: 5px;
+  position: absolute;
+  width: auto;
+  z-index: -1;
+}
+
+/* Submit & reset buttons */
+form.normform input[type=submit],
+form.normform input[type=reset] {
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 12px 15px;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  top: 0;
+}
+
+form.normform input[type=submit]:hover,
+form.normform input[type=reset]:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+form.normform input[type=submit]:focus {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+form.normform input[type=reset]:focus {
+  border-color: var(--nf-main-color);
+}
+
+form.normform input[type=submit] {
+  background: var(--nf-main-color);
+  border: 1px solid #4A90E2;
+  color: white;
+}
+
+form.normform input[type=submit]:hover {
+  background: var(--nf-main-color-hover-color);
+}
+
+form.normform input[type=reset] {
+  background: white;
+  border: 1px solid lightgrey;
+  color: grey;
+}
+
+form.normform .inline-buttons {
+  display: flex;
+}
+
+form.normform .inline-buttons input:first-of-type {
+  margin-right: 10px;
+}
+
+form.normform .inline-buttons input[type=submit],
+form.normform .inline-buttons input[type=reset] {
+  width: 50%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-bg-color: #EBEBEB;
+  --bg-monochromatic: #D2D2D2;
+  --bg-accent-color: #D2D2D2;
+  --text-color: #110F1A;
+  --heading-color: #79C99E;
+  --heading-monochromatic: #55BA84;
+  --accent-color: #4EA5D9;
+  --accent-monochromatic: #278CC2;
+  --cancel-color: #E85F5C;
+  --cancel-monochromatic: #E2332F;
+  --active-link-color: #9B5DE5;
+  --subtitle-color: #E7BBE3;
+}
+
+a:link {
+  color: var(--accent-monochromatic);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.06em;
+  text-decoration-skip-ink: all;
+  transition: color 0.2s ease, text-decoration-thickness 0.2s ease;
+}
+a:visited {
+  color: var(--active-link-color);
+}
+a:hover {
+  color: var(--accent-color);
+  text-decoration-thickness: 0.12em;
+}
+a:active {
+  color: var(--accent-monochromatic);
+  transform: translateY(1px);
+}
+a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+a#logoLink {
+  margin: 0 0 10px auto;
+}
+a.button {
+  border: 1px solid var(--heading-monochromatic);
+  background-color: var(--heading-color);
+  padding: 0.5rem 0.9rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+a.button:hover {
+  background-color: var(--heading-monochromatic);
+}
+a.card {
+  position: relative;
+  border: 1px solid var(--accent-monochromatic);
+  background: linear-gradient(135deg, var(--heading-color), var(--accent-color));
+  border-radius: 12px;
+  padding: 1.25rem 1.25rem 1rem;
+  aspect-ratio: 1/1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  color: white;
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  gap: 0.4rem;
+  overflow: hidden;
+  isolation: isolate;
+}
+a.card:hover {
+  filter: brightness(0.95);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+a#inputRedirect, a#inputRedirect:visited {
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 12px 15px;
+  position: relative;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50%;
+  top: 0;
+  background: white;
+  border: 1px solid lightgrey;
+  color: grey;
+  text-align: center;
+  outline: none;
+}
+a#inputRedirect:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+a#inputRedirect:focus {
+  border-color: var(--nf-main-color);
+}
+a.card:hover .cardDesc, a.card:focus-visible .cardDesc {
+  max-height: 10rem;
+  opacity: 1;
+}
+a.card:hover .cardArrow, a.card:focus-visible .cardArrow {
+  transform: translateX(4px);
+}
+a.contactTile {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-content: center;
+  gap: 0.4rem;
+  padding: 1.25rem 1rem;
+  border: 1px solid var(--bg-monochromatic);
+  border-radius: 10px;
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+a.contactTile:hover, a.contactTile:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  border-color: var(--accent-monochromatic);
+  color: var(--accent-monochromatic);
+}
+a.contactTile:hover .contactIcon, a.contactTile:focus-visible .contactIcon {
+  color: var(--heading-monochromatic);
+  transform: scale(1.08);
+}
+
+body {
+  background: var(--primary-bg-color);
+  color: var(--text-color);
+  font-family: "Oxanium", sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 20% 0;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+header::before {
+  content: "";
+  display: block;
+  background: linear-gradient(90deg, var(--heading-color), var(--accent-color));
+  position: absolute;
+  top: -150%;
+  left: 0;
+  width: 100%;
+  height: 350%;
+  z-index: -30;
+  transform: skewY(15deg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: inline-flex;
+}
+img#logo {
+  justify-self: flex-end;
+  height: 256px;
+  margin: 0 0 10px auto;
+}
+img.badge {
+  width: 128px;
+  height: 128px;
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 5rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "Oxanium SemiBold", sans-serif;
+  margin: 0.2em 0;
+  color: var(--text-color);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: "Oxanium Bold", sans-serif;
+  padding: 0;
+  margin-top: 0;
+  color: var(--subtitle-color);
+}
+
+h3 {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 2rem 0 0.76rem;
+  position: relative;
+  padding-left: 0.75rem;
+}
+h3:not(#affiliationsHeading)::first-letter {
+  font-size: 150%;
+  float: left;
+  line-height: 0.45;
+}
+h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  bottom: 0.15em;
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--heading-color), var(--accent-color));
+}
+h3#affiliationsHeading {
+  display: block;
+  text-align: center;
+  font-family: "Oxanium Bold", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  opacity: 0.55;
+  margin-bottom: 2.5rem;
+}
+h3#affiliationsHeading::before {
+  display: none;
+}
+
+h4 {
+  font-size: 1.45rem;
+  font-family: "Oxanium Medium", sans-serif;
+}
+
+h5 {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 1.15rem;
+  font-family: "Oxanium Regular", sans-serif;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-family: "Oxanium Light", sans-serif;
+}
+
+p, ul, ol {
+  font-size: 1.3rem;
+  font-family: "Oxanium Medium", sans-serif;
+  text-align: justify;
+  margin: 1em 4em;
+  line-height: 1.5;
+  width: min(50rem, 100%);
+}
+
+ul.flashes {
+  list-style: "🛈";
+  box-sizing: border-box;
+  max-width: 15em;
+  gap: 15px;
+}
+
+p::first-letter {
+  font-size: 240%;
+  font-family: "Oxanium Light", sans-serif;
+  font-weight: lighter;
+  float: left;
+  line-height: 1;
+  padding-right: 8px;
+}
+
+@counter-style home {
+  system: cyclic;
+  symbols: "~";
+  suffix: " ";
+}
+ul {
+  list-style: home;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1em;
+}
+
+li.error-message {
+  color: var(--primary-bg-color);
+  background-color: var(--cancel-monochromatic);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+}
+
+main {
+  margin: 0 5rem 7rem;
+  min-width: 80%;
+  max-width: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 3%;
+}
+
+button {
+  font-size: 1.2rem;
+  font-family: "Oxanium Bold", sans-serif;
+}
+button.btnLink {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  text-decoration: inherit;
+  line-height: normal;
+  border-radius: 0;
+  cursor: inherit;
+}
+
+div#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 14rem));
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+div#contentTitle {
+  width: auto;
+  height: max-content;
+  margin: 3em;
+}
+div#contentBody {
+  width: auto;
+  height: max-content;
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div.input-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 10px;
+}
+div.input-group-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardEyebrow {
+  font-size: 0.7rem;
+  font-family: "Oxanium Bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.85;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-family: "Oxanium SemiBold", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  color: inherit;
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  font-family: "Oxanium Regular", sans-serif;
+  line-height: 1.35;
+  align-self: start;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+.cardArrow {
+  justify-self: end;
+  font-size: 1.4rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.card,
+  a.card .cardDesc,
+  a.card .cardArrow {
+    transition: none;
+  }
+  a.card:hover {
+    transform: none;
+  }
+}
+/* Reveal-on-scroll (progressive enhancement; JS toggles .in-view) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger children of a common parent for a choreographed feel */
+#cards .reveal.in-view {
+  transition-delay: 0s;
+}
+
+#cards .reveal.in-view:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+#cards .reveal.in-view:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+#cards .reveal.in-view:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
+#contentBody > ul > li.reveal.in-view:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+#contentBody > ul > li.reveal.in-view:nth-child(3) {
+  transition-delay: 0.16s;
+}
+
+#contentBody > ul > li.reveal.in-view:nth-child(4) {
+  transition-delay: 0.24s;
+}
+
+#contentBody > ul > li.reveal.in-view:nth-child(5) {
+  transition-delay: 0.32s;
+}
+
+#contentBody > ul > li.reveal.in-view:nth-child(6) {
+  transition-delay: 0.4s;
+}
+
+#badges a:nth-child(2) img.badge.reveal.in-view {
+  transition-delay: 0.08s;
+}
+
+#badges a:nth-child(3) img.badge.reveal.in-view {
+  transition-delay: 0.16s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.in-view {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+/* Rotating subtitle (JS swaps text; CSS handles the crossfade) */
+.rotatingSubtitle {
+  transition: opacity 0.3s ease;
+}
+
+.rotatingSubtitle.is-fading {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotatingSubtitle,
+  .rotatingSubtitle.is-fading {
+    transition: none;
+    opacity: 1;
+  }
+}
+input[type=submit]#submitForm {
+  margin: 0;
+}
+
+.contactTiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  list-style: none;
+}
+
+.contactIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--accent-monochromatic);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contactLabel {
+  font-family: "Oxanium SemiBold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.contactSub {
+  font-family: "Oxanium Regular", sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+.pgpFingerprint {
+  font-family: "Courier New", ui-monospace, monospace;
+  font-size: 0.65rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+  opacity: 0.75;
+  max-width: 100%;
+}
+.pgpFingerprint[data-status=loading] {
+  font-style: italic;
+  opacity: 0.5;
+}
+.pgpFingerprint[data-status=error] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.contactTile,
+  .contactIcon {
+    transition: none;
+  }
+  a.contactTile:hover,
+  a.contactTile:focus-visible {
+    transform: none;
+  }
+  a.contactTile:hover .contactIcon,
+  a.contactTile:focus-visible .contactIcon {
+    transform: none;
+  }
+}
+section#badges {
+  display: block;
+  width: 100%;
+  row-gap: 2rem;
+  padding: 4rem 0 5rem;
+  margin-top: 5rem;
+  border-top: 1px solid rgba(17, 15, 26, 0.12);
+  text-align: center;
+}
+section#badges .badgeRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, max-content));
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 128px;
+  width: 100%;
+  background-color: var(--bg-monochromatic);
+  flex-shrink: 0;
+  position: relative;
+  bottom: 0;
+  border-top: solid 1px var(--text-color);
+}
+
+.footerContent {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  padding: 1rem 2rem;
+  flex: 1;
+}
+.footerContent:empty {
+  display: none;
+}
+
+.footerBottom {
+  border-top: 1px solid rgba(17, 15, 26, 0.15);
+  padding: 0.75rem 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+.footerBottom noscript {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-bg-color: #110F1A;
+    --bg-monochromatic: #26223A;
+    --bg-accent-color: #1A1A1A;
+    --text-color: #EBEBEB;
+    --heading-color: #79C99E;
+    --heading-monochromatic: #55BA84;
+    --accent-color: #4EA5D9;
+    --accent-monochromatic: #6BBDE8;
+    --cancel-color: #E85F5C;
+    --cancel-monochromatic: #E2332F;
+  }
+  section#badges {
+    border-top: 1px solid rgba(235, 235, 235, 0.18);
+  }
+  .footerBottom {
+    border-top: 1px solid rgba(235, 235, 235, 0.12);
+  }
+  footer {
+    border-top-color: var(--bg-monochromatic);
+  }
+  h3#affiliationsHeading {
+    color: var(--text-color);
+  }
+  a.contactTile {
+    background-color: var(--bg-monochromatic);
+    border-color: rgba(235, 235, 235, 0.12);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+  a.contactTile:hover,
+  a.contactTile:focus-visible {
+    background-color: #3A3650;
+    border-color: var(--accent-monochromatic);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  }
+}
+/* Responsive Design Rules */
+@media screen and (max-width: 850px) {
+  body {
+    background-image: linear-gradient(to top right, var(--bg-accent-color), var(--primary-bg-color));
+  }
+  header {
+    padding: 2rem 5% 0;
+  }
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+  }
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2.3rem);
+  }
+  h3 {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  }
+  h4 {
+    font-size: clamp(0.9rem, 3vw, 1.3rem);
+  }
+  h5 {
+    font-size: clamp(0.6rem, 2vw, 1rem);
+    line-height: 1.25;
+    padding: 0.25rem;
+  }
+  p, ul, ol {
+    text-align: left;
+    font-size: clamp(0.9rem, 3vw, 1.3rem);
+    margin: 0.5em 1em;
+    line-height: 1.25;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  ul {
+    row-gap: 0.75em;
+  }
+  div#heading {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.25em;
+  }
+  a img#logo {
+    margin: 0 0 10px auto;
+    align-self: center;
+    padding-top: 0.25em;
+  }
+  div#contentBody {
+    padding: 1.5rem 0;
+    flex-direction: column;
+  }
+  h2#running-head {
+    font-size: 1.75rem;
+    padding: 0 0.25em;
+    margin: 0.25rem;
+    align-self: flex-end;
+  }
+  main {
+    margin: 0;
+    padding: 0.5em;
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+  }
+  div#contentTitle {
+    margin: 5rem 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  div#contentBody {
+    margin: 0.5em 0;
+  }
+  div#cards {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 1rem;
+  }
+  .contactTiles {
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap: 0.75rem;
+    max-width: 100%;
+  }
+  footer {
+    height: 55px;
+    padding: 0.25em;
+    gap: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
