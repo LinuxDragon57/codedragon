@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-container:
+    runs-on: container-builder
+    steps:
+      - name: Checkout the master branch
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: Log into the Forgejo Container registry
+        run: |
+          echo "Logging into Forgejo Container registry..."
+          echo "${{ forgejo.token }}" | podman login ${{ forgejo.server_url }} -u ${{ forgejo.actor }} --password-stdin
+      - name: Build container image
+        run: |
+          echo "Building container image..."
+          REGISTRY_HOST=$(echo "${{ forgejo.server_url }}" | cut -d'/' -f3)
+          IMAGE_IDENTITY=${REGISTRY_HOST}/${{ forgejo.repository }}
+          podman build -t "${IMAGE_IDENTITY}:latest" .
+          podman push "${IMAGE_IDENTITY}:latest"
