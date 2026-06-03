@@ -5,6 +5,9 @@ on:
 jobs:
   build-container:
     runs-on: container-builder
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout the master branch
         uses: actions/checkout@v2
