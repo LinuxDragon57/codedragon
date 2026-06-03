@@ -10,7 +10,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: master
-      - name: Log into the Forgejo Container registry
       - name: Build container image
         run: |
           echo "Setting up registry variables..."
