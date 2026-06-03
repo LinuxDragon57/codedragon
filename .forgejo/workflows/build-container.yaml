@@ -13,7 +13,7 @@ jobs:
       - name: Log into the Forgejo Container registry
         run: |
           echo "Logging into Forgejo Container registry..."
-          echo "${{ forgejo.token }}" | podman login ${{ forgejo.server_url }} -u ${{ forgejo.actor }} --password-stdin
+          echo "${{ forgejo.token }}" | podman login "$(echo ${{ forgejo.server_url }} | cut -d'/' -f3)" -u ${{ forgejo.actor }} --password-stdin
       - name: Build container image
         run: |
           echo "Building container image..."
