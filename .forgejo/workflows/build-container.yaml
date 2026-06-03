@@ -19,5 +19,5 @@ jobs:
           echo "Building container image..."
           REGISTRY_HOST=$(echo "${{ forgejo.server_url }}" | cut -d'/' -f3)
           IMAGE_IDENTITY=${REGISTRY_HOST}/${{ forgejo.repository }}
-          podman build -t "${IMAGE_IDENTITY}:latest" .
-          podman push "${IMAGE_IDENTITY}:latest"
+          podman build -t "${IMAGE_IDENTITY,,}:latest" .
+          podman push "${IMAGE_IDENTITY,,}:latest"
