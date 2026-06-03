@@ -11,13 +11,17 @@ jobs:
         with:
           ref: master
       - name: Log into the Forgejo Container registry
-        run: |
-          echo "Logging into Forgejo Container registry..."
-          echo "${{ forgejo.token }}" | podman login "$(echo ${{ forgejo.server_url }} | cut -d'/' -f3)" -u ${{ forgejo.actor }} --password-stdin
       - name: Build container image
         run: |
-          echo "Building container image..."
+          echo "Setting up registry variables..."
           REGISTRY_HOST=$(echo "${{ forgejo.server_url }}" | cut -d'/' -f3)
           IMAGE_IDENTITY=${REGISTRY_HOST}/${{ forgejo.repository }}
+          
+          echo "Logging into $REGISTRY_HOST..."
+          echo "${{ forgejo.token }}" | podman login ${REGISTRY_HOST} -u ${{ forgejo.actor }} --password-stdin
+
+          echo "Building container image..."
           podman build -t "${IMAGE_IDENTITY,,}:latest" .
+
+          echo "Pushing container image..."
           podman push "${IMAGE_IDENTITY,,}:latest"
