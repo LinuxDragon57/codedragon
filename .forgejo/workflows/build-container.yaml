@@ -21,7 +21,7 @@ jobs:
           ACTOR="${{ forgejo.actor }}"
           
           echo "Logging into $REGISTRY_HOST..."
-          echo "${{ REGISTRY_TOKEN }}" | podman login ${REGISTRY_HOST} -u ${ACTOR,,} --password-stdin
+          echo "${{ secrets.REGISTRY_TOKEN }}" | podman login ${REGISTRY_HOST} -u ${ACTOR,,} --password-stdin
 
           echo "Building container image..."
           podman build -t "${IMAGE_IDENTITY,,}:latest" .
