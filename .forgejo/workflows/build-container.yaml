@@ -2,6 +2,9 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: '30 15 * * 0'
+      timezone: America/Chicago
 jobs:
   build-container:
     runs-on: container-builder
